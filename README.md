@@ -106,7 +106,7 @@ Is this ok? (yes)
 
 #### 命令配置（至关重要）
 
-```
+```javascript
   "preferGlobal": "true",
   "bin": {
     "badge": "bin/badge.js"
@@ -122,7 +122,7 @@ Is this ok? (yes)
 
 #### 依赖
 
-```
+```javascript
   "devDependencies": {
     "chai": "^1.9.2",
     "gulp": "^3.8.10",
@@ -168,7 +168,7 @@ Is this ok? (yes)
 	
 #### scripts
 
-```
+```javascript
   "scripts": {
     "start": "npm publish .",
     "test": " node bin/badge.js -t js -n q "
@@ -189,7 +189,7 @@ Is this ok? (yes)
 
 
 
-```
+```javascript
 	#!/usr/bin/env node
 	/**
 	 * Module dependencies.
@@ -269,7 +269,7 @@ Is this ok? (yes)
 
 - commander用法
 
-```
+```javascript
 	var program = require('commander');
 	var version = require("../package.json").version;
 
@@ -287,7 +287,7 @@ Is this ok? (yes)
 
 - 参数的默认值
 
-```
+```javascript
 	var module_name = '';
 	if(isDefined(program.name) == true && typeof program.name == 'string' ){
 		module_name = program.name;
@@ -299,7 +299,7 @@ Is this ok? (yes)
 
 - 主文件
 
-```
+```javascript
 	// main 
   require('../index')(module_name, type, format, verbose);
 ```
@@ -308,7 +308,7 @@ Is this ok? (yes)
 
 ## 编写index.js
 
-```
+```javascript
 module.exports = function (module_name, type, format,verbose) {
 	console.log('i am main file for cli');
 }
@@ -317,7 +317,7 @@ module.exports = function (module_name, type, format,verbose) {
 
 ## 编写test/node-cli-demo.js
 
-```
+```javascript
 var assert = require('chai').assert;
 var expect = require('chai').expect;
 require('chai').should();
@@ -347,7 +347,7 @@ describe('Node-cli-demo', function(){
 
 修改gulpfile.js
 
-```
+```javascript
 	var gulp = require('gulp');
 	var istanbul = require('gulp-istanbul');
 	var mocha = require('gulp-mocha'); 
@@ -400,10 +400,10 @@ describe('Node-cli-demo', function(){
 	
 ## 技术
 
-- https://github.com/tj/commander.js(命令行)
-- https://github.com/request/request（http请求）
-- https://github.com/mochajs/mocha(测试)
-- https://github.com/wycats/handlebars.js（模板）
+- https://github.com/tj/commander.js (命令行)
+- https://github.com/request/request (http请求)
+- https://github.com/mochajs/mocha (测试)
+- https://github.com/wycats/handlebars.js (模板)
 - https://github.com/lorenwest/node-config (配置)
 
 cli参考
@@ -415,7 +415,7 @@ cli参考
 
 https://github.com/montagejs/minit/blob/master/cli.js
 
-```
+```javascript
 var fs = require("fs");
 var path = require("path");
 
