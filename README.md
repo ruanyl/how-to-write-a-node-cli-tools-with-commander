@@ -400,10 +400,10 @@ describe('Node-cli-demo', function(){
 	
 ## 技术
 
-- https://github.com/tj/commander.js(命令行)
-- https://github.com/request/request（http请求）
-- https://github.com/mochajs/mocha(测试)
-- https://github.com/wycats/handlebars.js（模板）
+- https://github.com/tj/commander.js (命令行)
+- https://github.com/request/request (http请求)
+- https://github.com/mochajs/mocha (测试)
+- https://github.com/wycats/handlebars.js (模板)
 - https://github.com/lorenwest/node-config (配置)
 
 cli参考
